@@ -1,3 +1,18 @@
+body {
+    font-family: Helvetica, Arial, Helvetica, sans-serif;
+    background-color: #FFBA69;
+    align-items: center
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+@-ms-viewport { width: device-width; }
+
 .logo {
     margin-bottom: 20px;
 }
@@ -28,13 +43,15 @@ div.news {
     box-sizing: border-box;
     margin-top: 30px;
     margin-bottom: 30px;
+    background-color: #69FF86;
 }
 
 div.left {
     border: 1px solid #555; 
     max-width: 25%;
-    display: inline-block;
     text-align: center;
+    background-color: #B28249;
+    margin-bottom: 30px;
 }
 
 div.left p {
@@ -46,12 +63,21 @@ div.left p {
     max-width: 50%;
 }
 
+@media only screen and (max-width: 1000px)
+
+{
+    .rogue {
+        max-width: 25%;
+    }
+}
+
 div.right {
     float: right;
     border: 1px solid #555; 
     max-width: 25%;
-    display: inline-block;
     text-align: center;
+    padding-bottom: 5px;
+    background-color: #B2824A
 }
 
 div.right p {
@@ -61,4 +87,90 @@ div.right p {
 .jones {
     max-height: 50%;
     max-width: 50%;
+}
+
+div.actor {
+    box-sizing: border-box;
+    margin-top: 30px;
+    text-align: center;
+}
+
+div.actor img {
+    max-height: 500px;
+    max-width: 500px;
+}
+
+.bio {
+    float: left;
+    border: 1px solid #555; 
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    background-color: #69FF86;
+    height: 100px;
+    max-width: 75%;
+    overflow-y: auto;
+}
+
+.bio h2 {
+    text-align: center;
+}
+
+.film {
+    border: 1px solid #555; 
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #69FF86;
+    width: 350px;
+}
+
+.film ul {
+    list-style-type: none;
+}
+
+.film h2 {
+    text-align: center;
+}
+
+div.details {
+    box-sizing: border-box;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+div.details img {
+    max-height: 500px;
+    max-width: 500px;
+}
+
+div.plot {
+    border: 1px solid #555; 
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #69FF86;
+    max-height: 200px;
+    max-width: 75%;
+}
+
+div.cast {
+    border: 1px solid #555; 
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #69FF86;
+    width: 350px;
+}
+
+div.cast ul {
+    list-style-type: none;
+}
+
+div.reviews {
+    border: 1px solid #555; 
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #69FF86;
 }
